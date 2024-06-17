@@ -4,8 +4,8 @@ import React, { useEffect } from 'react';
  
 
   useEffect(() => {
-    window.location.href = 'http://localhost:1337/admin/auth/login' ,'_blank' ;
-    // window.location.href = 'https://elegant-respect-d8392b3457.strapiapp.com/admin/' ,'_blank' ;
+    // window.location.href = 'http://localhost:1337/admin/auth/login' ,'_blank' ;
+    window.location.href = 'https://elegant-respect-d8392b3457.strapiapp.com/admin/' ,'_blank' ;
 
     
   }, []);
