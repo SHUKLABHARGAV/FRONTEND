@@ -19,7 +19,7 @@ function App() {
   const { pathname } = useLocation()
 
   const isLoginPath = useMemo(() => {
-    return pathname === '/login'
+    return pathname === 'https://spinindustries.netlify.app/login'
   },[pathname])
   return (
     <>
