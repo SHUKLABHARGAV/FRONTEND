@@ -1,6 +1,7 @@
  import React from 'react'
  import './index.css'
  
+ import img1 from "./img/logo 1  .png"
 import {Link} from "react-router-dom"
  
 const Navbar = () => {
@@ -33,8 +34,8 @@ const Navbar = () => {
      
     <nav className="navbar navbar-expand-lg bg-white navbar-light sticky-top py-0 pe-5"  >
         <Link to="/" className="navbar-brand ps-5 me-0">
- 
-            <h1 className="text-white m-0">Spin Industries</h1>
+        
+            <h1 className="text-white m-0  ">Spin Industries</h1>
         </Link>
         <button type="button" className="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span className="navbar-toggler-icon"></span>

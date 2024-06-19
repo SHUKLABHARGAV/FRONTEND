@@ -229,12 +229,13 @@ h6,
   border-radius: 3.5rem;
 }
 
+
 @media (max-width: 768px) {
   #header-carousel .carousel-item {
       position: relative;
       min-height: 450px;
-  }
-  
+  } 
+ 
   #header-carousel .carousel-item img {
       position: absolute;
       width: 100%;
