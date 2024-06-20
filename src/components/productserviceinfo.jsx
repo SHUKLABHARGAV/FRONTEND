@@ -79,7 +79,7 @@ const Productserviceinfo = () => {
               <div className="row gx-3 h-100">
                 <div className=" align-self-start wow fadeInUp" data-wow-delay="0.1s">
                   <h1 className="display-5 mb-4">Product</h1>
-                  <img className="img-fluid" alt='w' src={`http://localhost:1337${product.productimg.data[0].attributes.url}`} />
+                  <img className="img-fluid" alt='w' src={` https://elegant-respect-d8392b3457.media.strapiapp.com/${product.productimg.data[0].attributes.url}`} />
                 </div>
 
               </div>
