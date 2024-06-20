@@ -18,7 +18,7 @@ const Productserviceinfo = () => {
     // Replace with your actual fetch logic
     const fetchProduct = async () => {
       try {
-        await fetch(`http://localhost:1337/api/services/${id}?populate=*`, {
+        await fetch(`https://elegant-respect-d8392b3457.strapiapp.com/api/services/${id}?populate=*`, {
           method: "GET"
         })
           .then((rsp) => rsp.json())
