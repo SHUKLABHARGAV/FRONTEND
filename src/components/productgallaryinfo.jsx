@@ -85,7 +85,7 @@ const Productgalleryinfo = () => {
               </div>
             </div>
             <div className="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-              <h1 className="display-6 mb-4">  {product.productTitle}</h1>
+              <h1 className="display-6 mb-4">  {product.Title}</h1>
               <div className="mb-4 mx-0">
                 <div className="m-0" onClick={toggleAccordion}>
                   <p className="display-6 d-flex justify-content-between align-items-center">   Description  {isOpen ? <FaAngleDoubleUp /> : <FaAngleDoubleDown />}</p>
