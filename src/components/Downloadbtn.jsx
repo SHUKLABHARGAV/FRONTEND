@@ -65,9 +65,7 @@ const handleDownload = () => {
     //   };
   return (
     <>
-    <a href={pdfUrl} download="downloaded-file.pdf">
-      Download PDF
-    </a>
+    
           <button type="button" onClick={handleDownload} disabled={!pdfUrl} download="downloaded-file.pdf"
                             className="btn py-2 position-relative top-0 end-0 mt-2 me-2 " style={{ backgroundColor:'white',color:'#0b6ab2',borderRadius:"5px"}}> DownLoad Broucher</button>
    
