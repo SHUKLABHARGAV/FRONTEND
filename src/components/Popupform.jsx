@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { Modal, Button } from 'react-bootstrap';
 import Popup from 'reactjs-popup';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
  
 import 'reactjs-popup/dist/index.css';
  
@@ -10,6 +12,18 @@ import Form from './form';
 const Popupform = () => {
 
  
+    const inquiryForm = useRef();
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_4ilhnyc', 'template_vakqw3n', inquiryForm.current, 'Wz0a-upaGN6c2IWxE')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
     const {
         register,
@@ -31,29 +45,35 @@ const Popupform = () => {
 
         // Close the modal after form submission
         setShowModal(false);
-        reset(); // Reset the form
+   
+  // Reset the form
     };
 
     return (
-        <>      <Popup  open={open} onClose={()=>setOpen(false)}   >
+        <>   
        
 
-            <Modal show={showModal} onHide={() => setShowModal(true)}>
+            <Modal show={showModal} onHide={() => setShowModal(false)}>
                 <Modal.Header closeButton>
                     <Modal.Title>Enquiry Form</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
-           <Form/>
+ 
+                 
+                    <Form/>
+          
+            
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant='secondary' onClick={() => setShowModal(true)}>
+                    <Button variant='secondary' onClick={() => setShowModal(false)}>
                         Close
                     </Button>
                 </Modal.Footer>
             </Modal>
-            {/* <a className="m-2 button" href="#" onClick={() => setShowModal(true)}>
-                <span className='disable'>Enquire Now</span>
-            </a> */}
+            <Popup  open={open} onClose={()=>setOpen(false)}   >
+            <div onFocus={showModal}>
+              
+            </div>
             </Popup>
         </>
     );

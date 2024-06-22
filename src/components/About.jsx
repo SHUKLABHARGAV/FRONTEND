@@ -1,7 +1,7 @@
 import React from 'react'
 import img1 from "./img/product 7.jpeg"
 import img2 from "./img/about-2.jpg"
-import Popup from"./popup"
+ 
 const About = () => {
     const bgprimary = {
         color : "#0b6ab2",
@@ -10,7 +10,7 @@ const About = () => {
      
   return (
     <>
-       {/* <Popup/> */}
+  
        <div className="container-xxl py-5">
         <div className="container">
             <div className="row g-5">
