@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
  
 import Carousel  from "./components/Carousel";
 import About  from "./components/About";
@@ -9,13 +9,19 @@ import OurTeam from "./components/OurTeam";
 import Footer from "./components/Footer";
 import Testimonial from './components/Testimonial';
  
+import Popupf from "./components/Popupform"
+ 
+
+ 
 
 const Home = () => {
-  
+ 
 
   return (
     <>
        
+  <Popupf/> 
+ 
         <Carousel/>
         <About/>
         <Counter/>

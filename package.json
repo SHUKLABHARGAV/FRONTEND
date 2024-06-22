@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "homepage": ".",
- 
   "dependencies": {
     "@emailjs/browser": "^3.12.1",
     "@testing-library/jest-dom": "^5.17.0",
@@ -22,6 +21,7 @@
     "react-owl-carousel": "^2.3.3",
     "react-recaptcha": "^2.3.10",
     "react-router-dom": "^6.21.3",
+    "reactjs-popup": "^2.0.6",
     "vite": "^5.2.11",
     "vite-plugin-svgr": "^4.2.0",
     "vite-tsconfig-paths": "^4.3.2",
